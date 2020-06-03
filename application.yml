@@ -6,9 +6,9 @@ spring:
       setting:
         trace: false
   jpa:
-    database-platform:
-    hibernate: org.hibernate.dialect.H2Dialect
-     ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
   datasource:
     url: jdbc:h2:file:~/todo;DB_CLOSE_ON_EXIT=FALSE;AUTO_SERVER=TRUE
     username: sa

@@ -1,9 +1,10 @@
 spring:
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.MySQL5Dialect
     hibernate:
       ddl-auto: update
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/prod
+    url: jdbc:mysql://127.0.0.1:3306/prod?useSSL=false
     username: root
     password: root
+    driver-class-name: com.mysql.jdbc.Driver

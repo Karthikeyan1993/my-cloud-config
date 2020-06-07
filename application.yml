@@ -7,3 +7,10 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/dev?useSSL=false
     username: root
     password: root
+
+app:
+  security:
+    jwtSecret: MySecretKey
+    jwtExpirationInMs: 604800000
+    jwtTokenPrefix: Bearer
+    jwtHeaderString: Authorization

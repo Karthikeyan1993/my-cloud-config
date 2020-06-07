@@ -12,5 +12,5 @@ app:
   security:
     jwtSecret: MySecretKey
     jwtExpirationInMs: 604800000
-    jwtTokenPrefix: Bearer
+    jwtTokenPrefix: Bearer 
     jwtHeaderString: Authorization
